@@ -8,8 +8,9 @@ public class JokeServiceImpl implements JokeService{
 
     private final ChuckNorrisQuotes chuckNorrisQuotes;
 
-    public JokeServiceImpl() {
-        this.chuckNorrisQuotes = new ChuckNorrisQuotes();
+    public JokeServiceImpl(ChuckNorrisQuotes chuckNorrisQuotes) {
+        this.chuckNorrisQuotes = chuckNorrisQuotes;
+        //Notice we don't use the new word, because of the configuration file
     }
 
     @Override
